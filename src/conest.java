@@ -8,8 +8,10 @@
  *
  * @author victus
  */import java.util.Scanner;
+ import java.util.Arrays;
 public class conest {
     public static void main(String[] args) {
+        //problem S
         Scanner in=new Scanner(System.in);
         float n1=in.nextFloat();
         
@@ -28,7 +30,34 @@ public class conest {
        else{
             System.out.print("Out of Intervals");
         }
-    }
-}
-    
+        
+        //problem T
+     
+
+
+
+ 
+
+        Scanner input = new Scanner(System.in);
+
+        int[] arr = new int[3];
+
+        for (int i = 0; i < 3; i++) {
+            arr[i] = input.nextInt();
+        }
+
+        int[] original = arr.clone();  
+
+        Arrays.sort(arr);
+        for (int i = 0; i < 3; i++) {
+            System.out.println(arr[i]);
+        }
+
+        System.out.println(); 
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println(original[i]);
+        }
+    }}
+        
 
