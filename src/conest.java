@@ -12,52 +12,73 @@
 public class conest {
     public static void main(String[] args) {
         //problem S
-        Scanner in=new Scanner(System.in);
-        float n1=in.nextFloat();
-        
-        if(n1>=0&&n1<=25){
-            System.out.print("Interval [0,25]");
-        }
-       else if(n1>25&&n1<=50){
-            System.out.print("Interval (25,50]");
-        }
-       else if(n1>50&&n1<=75){
-            System.out.print("Interval (50,75]");
-        }
-       else if(n1>75&&n1<=100){
-            System.out.print("Interval (75,100]");
-        }
-       else{
-            System.out.print("Out of Intervals");
-        }
+//        Scanner in=new Scanner(System.in);
+//        float n1=in.nextFloat();
+//        
+//        if(n1>=0&&n1<=25){
+//            System.out.print("Interval [0,25]");
+//        }
+//       else if(n1>25&&n1<=50){
+//            System.out.print("Interval (25,50]");
+//        }
+//       else if(n1>50&&n1<=75){
+//            System.out.print("Interval (50,75]");
+//        }
+//       else if(n1>75&&n1<=100){
+//            System.out.print("Interval (75,100]");
+//        }
+//       else{
+//            System.out.print("Out of Intervals");
+//        }
         
         //problem T
      
 
 
 
- 
+// 
+//
+//        Scanner input = new Scanner(System.in);
+//
+//        int[] arr = new int[3];
+//
+//        for (int i = 0; i < 3; i++) {
+//            arr[i] = input.nextInt();
+//        }
+//
+//        int[] original = arr.clone();  
+//
+//        Arrays.sort(arr);
+//        for (int i = 0; i < 3; i++) {
+//            System.out.println(arr[i]);
+//        }
+//
+//        System.out.println(); 
+//
+//        for (int i = 0; i < 3; i++) {
+//            System.out.println(original[i]);
+//        }
 
-        Scanner input = new Scanner(System.in);
-
-        int[] arr = new int[3];
-
-        for (int i = 0; i < 3; i++) {
-            arr[i] = input.nextInt();
+        //U
+        Scanner in=new Scanner(System.in);
+        String number =in.next();
+           if (!number.contains(".")) {
+            System.out.println("int " + number);
+    }
+    else{ 
+        String[] parts = number.split("\\.");
+            String integerPart = parts[0];
+            String decimalPart = parts[1];
+        
+        if(Double.parseDouble(decimalPart)==0){
+             System.out.println("int " +integerPart);
         }
-
-        int[] original = arr.clone();  
-
-        Arrays.sort(arr);
-        for (int i = 0; i < 3; i++) {
-            System.out.println(arr[i]);
+        else{
+            System.out.println("float " + integerPart + " 0."+ decimalPart);
+            
         }
-
-        System.out.println(); 
-
-        for (int i = 0; i < 3; i++) {
-            System.out.println(original[i]);
-        }
-    }}
+    }
+}}
+    
         
 
