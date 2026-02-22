@@ -60,25 +60,76 @@ public class conest {
 //        }
 
         //U
-        Scanner in=new Scanner(System.in);
-        String number =in.next();
-           if (!number.contains(".")) {
-            System.out.println("int " + number);
-    }
-    else{ 
-        String[] parts = number.split("\\.");
-            String integerPart = parts[0];
-            String decimalPart = parts[1];
-        
-        if(Double.parseDouble(decimalPart)==0){
-             System.out.println("int " +integerPart);
-        }
-        else{
-            System.out.println("float " + integerPart + " 0."+ decimalPart);
-            
-        }
-    }
-}}
-    
-        
+//        Scanner in=new Scanner(System.in);
+//        String number =in.next();
+//           if (!number.contains(".")) {
+//            System.out.println("int " + number);
+//    }
+//    else{ 
+//        String[] parts = number.split("\\.");
+//            String integerPart = parts[0];
+//            String decimalPart = parts[1];
+//        
+//        if(Double.parseDouble(decimalPart)==0){
+//             System.out.println("int " +integerPart);
+//        }
+//        else{
+//            System.out.println("float " + integerPart + " 0."+ decimalPart);
+//            
+//        }
+//    }
 
+    
+
+
+
+
+
+//        Scanner in = new Scanner(System.in);
+//
+//        int A = in.nextInt();
+//        String S = in.next();
+//        int B = in.nextInt();
+//        int C = in.nextInt();
+//
+//        int result = 0;
+//
+//        if (S.equals("+")) {
+//            result = A + B;
+//        } else if (S.equals("-")) {
+//            result = A - B;
+//        } else if (S.equals("*")) {
+//            result = A * B;
+//        }
+//
+//        if (result == C) {
+//            System.out.println("Yes");
+//        } else {
+//            System.out.println(result);
+//        }
+//           problem `W`
+        Scanner in = new Scanner(System.in);
+ 
+        int A = in.nextInt();
+        String S = in.next();
+        int B = in.nextInt();
+        String Q = in.next();
+        int C = in.nextInt();
+ 
+        int result = 0;
+ 
+        if (S.equals("+")) {
+            result = A + B;
+        } else if (S.equals("-")) {
+            result = A - B;
+        } else if (S.equals("*")) {
+            result = A * B;
+        }
+ 
+        if (result == C) {
+            System.out.println("Yes");
+        } else {
+            System.out.println(result);
+        }
+    }
+}
