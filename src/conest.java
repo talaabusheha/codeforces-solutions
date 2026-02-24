@@ -133,14 +133,31 @@ public class conest {
 //        }
                 //Y last 2digit
     
+//        Scanner in= new Scanner(System.in);
+//        int A=in.nextInt()%100;
+//        int B=in.nextInt()%100;
+//        int C=in.nextInt()%100;
+//        int D=in.nextInt()%100;
+//        int result = (A*B*C*D)%100;
+//        System.out.printf("%02d", result);
+//        //Z 
         Scanner in= new Scanner(System.in);
-        int A=in.nextInt()%100;
-        int B=in.nextInt()%100;
-        int C=in.nextInt()%100;
-        int D=in.nextInt()%100;
-        int result = (A*B*C*D)%100;
-        System.out.printf("%02d", result);
+        long A=in.nextLong();
+        long B=in.nextLong();
+        long C=in.nextLong();
+        long D=in.nextLong();
+        double right =B * Math.log(A);
+        double left =D * Math.log(C);
         
+        if(right>left){
+            System.out.print("YES");
+        }else{
+            System.out.print("NO");
+        }
+        
+
+    }
+}
     }
 }
     
