@@ -108,28 +108,40 @@ public class conest {
 //            System.out.println(result);
 //        }
 //           problem `W`
-        Scanner in = new Scanner(System.in);
- 
-        int A = in.nextInt();
-        String S = in.next();
-        int B = in.nextInt();
-        String Q = in.next();
-        int C = in.nextInt();
- 
-        int result = 0;
- 
-        if (S.equals("+")) {
-            result = A + B;
-        } else if (S.equals("-")) {
-            result = A - B;
-        } else if (S.equals("*")) {
-            result = A * B;
-        }
- 
-        if (result == C) {
-            System.out.println("Yes");
-        } else {
-            System.out.println(result);
-        }
+//        Scanner in = new Scanner(System.in);
+// 
+//        int A = in.nextInt();
+//        String S = in.next();
+//        int B = in.nextInt();
+//        String Q = in.next();
+//        int C = in.nextInt();
+// 
+//        int result = 0;
+// 
+//        if (S.equals("+")) {
+//            result = A + B;
+//        } else if (S.equals("-")) {
+//            result = A - B;
+//        } else if (S.equals("*")) {
+//            result = A * B;
+//        }
+// 
+//        if (result == C) {
+//            System.out.println("Yes");
+//        } else {
+//            System.out.println(result);
+//        }
+                //Y last 2digit
+    
+        Scanner in= new Scanner(System.in);
+        int A=in.nextInt()%100;
+        int B=in.nextInt()%100;
+        int C=in.nextInt()%100;
+        int D=in.nextInt()%100;
+        int result = (A*B*C*D)%100;
+        System.out.printf("%02d", result);
+        
     }
 }
+    
+
